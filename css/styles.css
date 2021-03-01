@@ -1,0 +1,136 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: inherit;
+  padding: 0;
+}
+
+body{
+    font-size: 2.5rem;
+}
+#nav{
+  background: #d5daeb;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.name-nav{
+  font-family: 'Montserrat-bold', sans-serif;
+  text-align: center;
+color: white;
+background: #1c1259;
+padding-top: 1.5rem;
+  font-size: 1.5rem;
+}
+.navbar{
+  background: #d5daeb;
+  font-family: 'Montserrat-bold', sans-serif;
+  color: black;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  list-style-type:none;
+  font-size: 1rem;
+  float: right;
+}
+
+#intro{
+  background: #fcd307;
+  text-align: center;
+  padding: 15%;
+  letter-spacing: .5rem;
+}
+.hero{
+  font-family: 'Bebas Neue', cursive;
+}
+
+#featured{
+  padding: 10% 7% 10% 0%;
+  text-align: center;
+    font-size: 1.5rem;
+
+}
+.feat-des {
+  padding-left: 3rem;
+}
+
+.feat-wo{
+  font-size: 1.5rem;
+  letter-spacing: .5rem;
+}
+.feat-img {
+  padding-left: 3rem;
+  text-align: center;
+}
+p, h1, h2{
+  font-family: 'Montserrat', sans-serif;
+}
+#skills{
+  background: #ee4266;
+  padding: 5% ;
+  color: black;
+    font-size: 2.5rem;
+
+
+
+}
+.web {
+  text-align: center;
+  padding: 2.5rem;
+  background: linear-gradient(#d5daeb, #ee4266);
+  border-radius: 1%;
+  font-size: 2.5rem;
+
+}
+.my-skills{
+  padding-bottom: 2.5%;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+#about-me{
+  padding: 5% 5%;
+  text-align: center;
+    font-size: 1.2rem;
+}
+
+footer{
+  text-align: center;
+  background: #1c1259;
+  color: white;
+}
+.img-pro{
+  padding: 5%;
+}
+.about{
+  padding: 0 7%;
+}
+.about__text {
+  font-size: 1rem;
+}
+#hire-me{
+  background: #d5daeb;
+  padding: 0 15%;
+  list-style-type:none;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+/* Extra Code */
+
+.footer {
+  padding: 1rem 0rem 0.3rem 0;
+}
+
+
+::selection {
+  background-color: #262626;
+  color: #ffffff;
+}
+
+.hire__svg {
+  height: 2rem;
+  width: 2rem;
+  margin: 0.8rem 2.5rem;
+}
