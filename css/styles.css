@@ -77,16 +77,15 @@ p, h1, h2{
 .web {
   text-align: center;
   padding: 2.5rem;
-  background: linear-gradient(#d5daeb, #ee4266);
   border-radius: 1%;
   font-size: 2.5rem;
 
 }
 .my-skills{
-  padding-bottom: 2.5%;
+  padding-bottom: 3rem;
   text-align: center;
   font-family: 'Bebas Neue', cursive;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 #about-me{
   padding: 5% 5%;
@@ -134,3 +133,64 @@ footer{
   width: 2rem;
   margin: 0.8rem 2.5rem;
 }
+#skill {
+  background-image: linear-gradient(60deg, #fcd307 0%,  #fcd307 50%, #1c1259 50%);
+  padding: 2rem;
+}
+
+.skills__main {
+  background-color: #fff;
+  padding: 1.7rem;
+}
+.skills__secondary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.skill__container{
+  padding: 1rem;
+  
+  position: relative;
+  background-image: linear-gradient(180deg, #fcd307 0%,  #fcd307 50%, #1c1259 50%);
+}
+
+.skill__cont {
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.skill__svg {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 50%;
+  background-color: #ffc7c7;
+  padding: 0.6rem;
+  border-radius: 50%;
+}
+.skill__name {
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 10px;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.points {
+  /* display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: center; */
+  text-align: center;
+}
+.points__text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  text-transform: capitalize;
+  padding-bottom: 0.2rem;
+  /* display: inline-block; */
+border-bottom: 2px solid rgb(68, 67, 67);
+  font-size: 1rem;
+}
+
