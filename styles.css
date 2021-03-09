@@ -84,6 +84,7 @@ padding-top: 1rem;
   text-align: center;
   font-size: 1.5rem;
   backface-visibility: hidden;
+  height: 100vh;
 }
 .feat-des {
   padding-left: 3rem;
@@ -116,6 +117,7 @@ p, h1, h2{
   color: black;
     font-size: 2.5rem;
 backface-visibility: hidden;
+  height: 100vh;
 
 
 }
@@ -137,6 +139,7 @@ backface-visibility: hidden;
   text-align: center;
     font-size: 1.2rem
     backface-visibility: hidden;
+  height: 100vh;
 }
 
 footer{
