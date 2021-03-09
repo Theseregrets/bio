@@ -1,4 +1,4 @@
-*,
+hidden*,
 *::after,
 *::before {
   margin: 0;
@@ -10,20 +10,25 @@ body{
     font-size: 2.5rem;
 }
 #nav{
-  background: #d5daeb;
+  background: #9ecca4;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  position: fixed;
+  z-index:20 ;
+  width: 100%;
+
 }
-.name-nav{
+#name-nav{
   font-family: 'Montserrat-bold', sans-serif;
   text-align: center;
 color: white;
-background: #1c1259;
-padding-top: 1.5rem;
+background: #1f441e;
+padding-top: 1rem;
   font-size: 1.5rem;
+
 }
 .navbar{
-  background: #d5daeb;
+  background: #9ecca4;
   font-family: 'Montserrat-bold', sans-serif;
   color: black;
   padding: 0;
@@ -31,36 +36,76 @@ padding-top: 1.5rem;
   border: 0;
   list-style-type:none;
   font-size: 1rem;
-  float: right;
+  position: fixed;
+  z-index: 1;
 }
-
+.nav-link{
+  color: black;
+}
+.nav-link:hover{
+  color: #9b3675;
+}
+.myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
 #intro{
-  background: #fcd307;
+  position: relative;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding-top: 20%
   text-align: center;
   padding: 15%;
   letter-spacing: .5rem;
+  backface-visibility: hidden;
+  height: 100vh;
 }
 .hero{
   font-family: 'Bebas Neue', cursive;
+  padding: 10%;
+  text-align: center;
+  /* /animation: moveInRght 3s; */
+}
+
+.hero__sub{
+  /* animation: moveInLeft 4s; */
+  padding: .5%;
+
+  text-align: center;
 }
 
 #featured{
   padding: 10% 7% 10% 0%;
   text-align: center;
-    font-size: 1.5rem;
-
+  font-size: 1.5rem;
+  backface-visibility: hidden;
 }
 .feat-des {
   padding-left: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
 }
 
 .feat-wo{
   font-size: 1.5rem;
   letter-spacing: .5rem;
+  animation: moveInLeft 2s;
+  font-weight: bolder;
 }
 .feat-img {
   padding-left: 3rem;
   text-align: center;
+}
+.wo{
+  font-family: "Montserrat", sans-serif;
+  animation: moveInLeft 3s;
+  font-size: 2rem;
+  font-weight: bolder;
 }
 p, h1, h2{
   font-family: 'Montserrat', sans-serif;
@@ -70,7 +115,7 @@ p, h1, h2{
   padding: 5% ;
   color: black;
     font-size: 2.5rem;
-
+backface-visibility: hidden;
 
 
 }
@@ -90,12 +135,13 @@ p, h1, h2{
 #about-me{
   padding: 5% 5%;
   text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.2rem
+    backface-visibility: hidden;
 }
 
 footer{
   text-align: center;
-  background: #1c1259;
+  background: #1f441e;
   color: white;
 }
 .img-pro{
@@ -103,9 +149,14 @@ footer{
 }
 .about{
   padding: 0 7%;
+  /* animation: moveInBottom 3s; */
 }
 .about__text {
   font-size: 1rem;
+
+}
+.about__name{
+  /* animation: moveInBottom 2s; */
 }
 #hire-me{
   background: #d5daeb;
@@ -134,7 +185,7 @@ footer{
   margin: 0.8rem 2.5rem;
 }
 #skill {
-  background-image: linear-gradient(60deg, #fcd307 0%,  #fcd307 50%, #1c1259 50%);
+  background-image: linear-gradient(60deg, #cee6b4 0%,  #cee6b4 50%, #1f441e 50%);
   padding: 2rem;
 }
 
@@ -153,9 +204,9 @@ footer{
 }
 .skill__container{
   padding: 1rem;
-  
+
   position: relative;
-  background-image: linear-gradient(180deg, #fcd307 0%,  #fcd307 50%, #1c1259 50%);
+  background-image: linear-gradient(180deg, #cee6b4 0%,  #cee6b4 50%, #1f441e 50%);
 }
 
 .skill__cont {
@@ -168,7 +219,7 @@ footer{
   transform: translate(-50%, -50%);
   top: 0%;
   left: 50%;
-  background-color: #ffc7c7;
+  background-color: #9b3675;
   padding: 0.6rem;
   border-radius: 50%;
 }
@@ -194,13 +245,42 @@ border-bottom: 2px solid rgb(68, 67, 67);
   font-size: 1rem;
 }
 
-@media only screen and (max-width: 75em) {
-  .skills__secondary {
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-columns: 1fr;
-    
-  }
-  .skill__container {
-    margin-bottom: 3rem;
-  }
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+ }
+  80% {
+    transform: translateX(1px);
+ }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+ }
+}
+@keyframes moveInRght {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+ }
+  80% {
+    transform: translateX(-1px);
+ }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+ }
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+ }
+  80% {
+    transform: translateY(-1px);
+ }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+ }
 }
